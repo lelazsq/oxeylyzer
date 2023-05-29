@@ -1,11 +1,11 @@
 # Oxeylyzer repl
 
 ## Building with cargo
-To use the analyzer, clone the repo and make sure you have rust nigthly installed. If you have, skip the next step.
+To use the analyzer, clone the repo and make sure you have rust nightly installed. If you have, skip the next step.
 
 To install rust, visit [the official installation page](https://www.rust-lang.org/learn/get-started) and follow the instructions there. When installing, make sure you add rust to PATH. Once you have installed, you may need to restart in order for the command to be recognised. After restarting, you can try running `rustup install nightly` and `rustup default nightly` to make sure the compiler can use all unstable features.
 
-Once you have done this, you can open a terminal in the folder you cloned into, and run `cargo run --release`. This will build and run the project. For future uses you can use this command again, or manually take the `.exe` in the newly created `target/release` folder, drop it in the root folder and execute that. There might be a better way to do that but I'm not sure.
+Once you have done this, you can open a terminal in the folder you cloned into, and run `cargo run --release`. This will build and run the project. For future uses you can use this command again, or `cargo install --path ./` from within the root folder of the project, which makes it runnable from anywhere as `oxeylyzer`!
 
 ## Using the repl
 Type `help` to get all commands with their explanation, and `<command> help` to get a more detailed description about it. Should be pretty self-explanatory :thumbsup:
@@ -75,9 +75,6 @@ Redirects are trigrams where you press all three keys with the same hand, but th
 
 #### Max Finger Use
 This basically exists to be a soft cap on how much %usage you can put on a finger before it's 'too much'. It is useful in columns that do well on paper but have very high total frequency, like `pnb` pinky.
-
-#### Finger Speed
-These finger speed weigths determine the strength of certain fingers, and divides the distance used for fspeed accordingly.
 
 ## Creating your own corpus rules
 
